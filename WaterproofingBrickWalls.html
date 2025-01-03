@@ -1,41 +1,126 @@
-<body style="background-color:rgb(110,164,240);">
-  <h1 style="text-align:center;">Waterproofing Brick Walls</h1>
-  <p><a href="index.html">Home Page</a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterproofing Brick Walls</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Temporary enhancements to complement styles.css */
+        body {
+            background: linear-gradient(to bottom right, #6ea4f0, #d9e9ff);
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-  <h2 style="text-align:center;">Waterproofing is essential in mortar work to ensure the long-lasting quality of the structure. Waterproofing allows the brick and mortar to do their jobs, such as keeping heat and cool in, and water out.<h2/>
+        header {
+            padding: 1.5rem;
+            background: #005b99;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    <div style="position:relative; height:60px;">
-<img src="IMG_4109.jpg"
-   style="position:absolute; top:130px; left:50px; width:300px; height:300px; border:none;"
-   title="IMG_4109.jpg" />
-</div>
+        header h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            text-align: center;
+        }
 
-    <div style="position:relative; height:60px;">
-<img src="IMG_4111.jpg"
-   style="position:absolute; top:130px; left:450px; width:300px; height:300px; border:none;"
-   title="IMG_4111.jpg" />
-</div>
+        nav a {
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            color: #fff;
+            text-decoration: none;
+        }
 
-    <div style="position:relative; height:60px;">
-<img src="IMG_4112.jpg"
-   style="position:absolute; top:330px; left:50px; width:300px; height:300px; border:none;"
-   title="IMG_4112.jpg" />
-</div>
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-    <div style="position:relative; height:60px;">
-<img src="IMG_4318.jpg"
-   style="position:absolute; top:330px; left:450px; width:300px; height:300px; border:none;"
-   title="IMG_4318.jpg" />
-</div>
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 1000px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
 
-    <div style="position:relative; height:60px;">
-<img src="IMG_4321.jpg"
-   style="position:absolute; top:600px; left:50px; width:300px; height:300px; border:none;"
-   title="IMG_4321.jpg" />
-</div>
+        main h2 {
+            color: #005b99;
+            text-align: center;
+            font-size: 2rem;
+        }
 
-    <div style="position:relative; height:60px;">
-<img src="IMG_4323.jpg"
-   style="position:absolute; top:600px; left:450px; width:300px; height:300px; border:none;"
-   title="IMG_4323.jpg" />
-</div>
+        main p {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .images img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            text-align: center;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Waterproofing Brick Walls</h1>
+        <nav>
+            <a href="index.html">Home Page</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Waterproofing is essential</h2>
+            <p>
+                Waterproofing is essential in mortar work to ensure the long-lasting quality of the structure. Waterproofing allows the brick and mortar to do their jobs, such as keeping heat and cool in, and water out.
+            </p>
+        </section>
+
+        <section class="images">
+            <div class="image-container">
+                <img src="IMG_4109.jpg" alt="Waterproofing process 1">
+                <img src="IMG_4111.jpg" alt="Waterproofing process 2">
+            </div>
+            <div class="image-container">
+                <img src="IMG_4112.jpg" alt="Waterproofing process 3">
+                <img src="IMG_4318.jpg" alt="Waterproofing process 4">
+            </div>
+            <div class="image-container">
+                <img src="IMG_4321.jpg" alt="Waterproofing process 5">
+                <img src="IMG_4323.jpg" alt="Waterproofing process 6">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kleks Corporation. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
