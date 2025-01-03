@@ -1,172 +1,104 @@
-/* General Reset */
-body, h1, h2, h3, p, ul, ol, li, a {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Temporary enhancements to complement styles.css */
+        body {
+            background: linear-gradient(to bottom right, #6ea4f0, #d9e9ff);
+            color: #333;
+        }
 
-/* Body Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
+        header {
+            padding: 1rem;
+            background: #005b99;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-/* Header Styling */
-header {
-    background: #007acc;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
+        header h1 {
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            font-size: 2.5rem;
+        }
 
-header h1 {
-    font-size: 2rem;
-    font-weight: bold;
-}
+        nav a {
+            margin: 0 1rem;
+            font-size: 1.2rem;
+        }
 
-header p {
-    font-size: 1rem;
-    font-weight: 300;
-}
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 1000px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
 
-/* Navigation Bar */
-nav {
-    display: flex;
-    justify-content: center;
-    background: #005b99;
-    padding: 0.5rem 0;
-}
+        main h2 {
+            color: #005b99;
+            text-align: center;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-size: 1rem;
-}
+        main p {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
 
-nav a:hover {
-    text-decoration: underline;
-}
+        .images {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
 
-/* Main Section */
-main {
-    padding: 2rem;
-    background: white;
-    margin: 1rem auto;
-    max-width: 900px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        .images img {
+            width: 48%;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-main h2 {
-    font-size: 1.5rem;
-    color: #005b99;
-    margin-bottom: 1rem;
-}
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
 
-main p {
-    margin-bottom: 1rem;
-}
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            text-align: center;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enhanced Visual Appeal</h1>
+        <nav>
+            <a href="index.html">Home Page</a>
+        </nav>
+    </header>
 
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
+    <main>
+        <h2>Welcome to the Enhanced Page</h2>
+        <p>
+            This is an improved version of your page with a more visually appealing design. It incorporates better typography, enhanced spacing, and interactive hover effects.
+        </p>
 
-footer p {
-    font-size: 0.9rem;
-}
+        <div class="images">
+            <img src="IMG_3943.jpg" alt="Image 1">
+            <img src="IMG_4187.jpg" alt="Image 2">
+        </div>
+    </main>
 
-/* Buttons */
-button {
-    background-color: #007acc;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #005b99;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    main {
-        padding: 1rem;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        margin: 0.5rem 0;
-    }
-}
-
-/* Enhanced Styles for Specific Sections */
-main section {
-    margin-bottom: 2rem;
-}
-
-main h2 {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-main p {
-    text-align: justify;
-    margin: 0 auto;
-    max-width: 700px;
-}
-
-/* Image Styling */
-.images {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.images img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.images img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Navigation Bar Enhancements */
-nav {
-    margin-top: 1rem;
-    text-align: center;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    margin: 0 1rem;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
+    <footer>
+        <p>&copy; 2024 Kleks Corporation. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
