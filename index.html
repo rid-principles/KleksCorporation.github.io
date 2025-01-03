@@ -1,76 +1,141 @@
 <!DOCTYPE html>
-<html>
-<body style="background-color:rgb(90,164,240);">
+<html lang="en">
 <head>
-  <title>Kleks Corporation</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link href="style.css" rel="stylesheet" 
-  </head>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td{ 
-  padding: 5px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleks Corporation</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        /* General body and header styles */
+        body {
+            background-color: rgb(90, 164, 240);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            font-family: 'fantasy', cursive;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        th {
+            background-color: #005b99;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: #005b99;
+            font-size: 1.2rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Image styles */
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Floating icon in the bottom right corner */
+        #favicon-icon {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 50px;
+            height: 50px;
+            border: none;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
 <body>
-<h1 style="text-align:center;font-family:fantasy;">Kleks Corporation Mortar Repair, Renewal and Waterproofing
-</h1>
-<h2 style="text-align:center;font-family:cursive">Over 15 Years of Experience, and fully insured with great service!
-<h3>Phone Number: 224-210-0232</h3>
-<h3>Email: Kleksmasonry@yahoo.com</h3>
-<h3><th><p><a href="Information.html">Information about Kleks Corporation</a></p></th></h3>
-  
 
-</body><table style="width:100%">
-  
-  <tr>
-    <th><h2><a href="CleaningBrickandRock.html">Cleaning Brick and Rock</a></h2></th>
-    
-    <th><h2><a href="ReplacingExistingBricks.html">Replacing Existing Bricks</a></h2></th>
-    
-    <th><h2><a href="WaterproofingBrickWalls.html">Waterproofing Brick Walls</a></h2></th> 
-  </tr>
-    
+    <!-- Header Section -->
+    <header>
+        <h1>Kleks Corporation Mortar Repair, Renewal and Waterproofing</h1>
+        <h2>Over 15 Years of Experience, and Fully Insured with Great Service!</h2>
+        <h3>Phone Number: 224-210-0232</h3>
+        <h3>Email: Kleksmasonry@yahoo.com</h3>
+        <h3><a href="Information.html">Information about Kleks Corporation</a></h3>
+    </header>
 
-<img src=favicon.ico" 
-   style="position:fixed; right:0px; bottom:0px; width:50px; height:50px; border:none;"
-   
+    <!-- Table Section -->
+    <section>
+        <table>
+            <tr>
+                <th><a href="CleaningBrickandRock.html">Cleaning Brick and Rock</a></th>
+                <th><a href="ReplacingExistingBricks.html">Replacing Existing Bricks</a></th>
+                <th><a href="WaterproofingBrickWalls.html">Waterproofing Brick Walls</a></th>
+            </tr>
+        </table>
+    </section>
 
+    <!-- Images Section -->
+    <section class="image-section">
+        <div class="image-container">
+            <img src="IMG_3088.jpg" alt="Masonry Work 1">
+        </div>
+        <div class="image-container">
+            <img src="IMG_3863.jpg" alt="Masonry Work 2">
+        </div>
+        <div class="image-container">
+            <img src="IMG_4109.jpg" alt="Masonry Work 3">
+        </div>
+        <div class="image-container">
+            <img src="IMG_0501.jpg" alt="Masonry Work 4">
+        </div>
+        <div class="image-container">
+            <img src="IMG_0537.jpg" alt="Masonry Work 5">
+        </div>
+    </section>
 
+    <!-- Floating Icon -->
+    <img src="favicon.ico" id="favicon-icon" alt="Favicon">
 
-  <div style="position:relative; height:60px;">
-<img src="IMG_3088.jpg"
-   style="position:absolute; top:1290px; left:415px; width:300px; height:300px; border:none;"
-   title="IMG_3088.jpg" />
-</div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Kleks Corporation. All Rights Reserved.</p>
+    </footer>
 
-  <div style="position:relative; height:60px;">
-<img src="IMG_3863.jpg"
-   style="position:absolute; top:930px; left:750px; width:300px; height:300px; border:none;"
-   title="IMG_3863.jpg" />
-</div>
-
-<div style="position:relative; height:60px;">
-<img src="IMG_4109.jpg"
-   style="position:absolute; top:870px; left:40px; width:300px; height:300px; border:none;"
-   title="IMG_4109.jpg" />
-</div>
-  
-<div style="position:relative; height:15px;">
-<img src="IMG_0501.jpg"
-   style="position:absolute; top:170px; left:50px; width:500px; height:400px; border:none;"
-   title="IMG_0501.jpg" />
-</div>
-
-<div style="position:relative; height:15px;">
-<img src="IMG_0537.jpg"
-   style="position:absolute; top:160px; left:600px; width:400px; height:400px; border:none;"
-   title="IMG_0537.jpg" />
-</div>
 </body>
-
 </html>
-
