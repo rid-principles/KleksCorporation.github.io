@@ -1,120 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Styles</title>
-    <style>
-        /* General Reset */
-        body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* General Reset */
+body, h1, h2, h3, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            color: #333;
-            background-color: #f9f9f9;
-            line-height: 1.6;
-        }
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-        header {
-            background-color: #0056b3;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
+/* Header Styling */
+header {
+    background: #007acc;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #f1f1f1;
-            padding: 0.5rem;
-        }
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #0056b3;
-            margin: 0 1rem;
-            font-weight: bold;
-        }
+header p {
+    font-size: 1rem;
+    font-weight: 300;
+}
 
-        nav a:hover {
-            color: #002c61;
-        }
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #005b99;
+    padding: 0.5rem 0;
+}
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
 
-        h1, h2, h3, h4, h5, h6 {
-            color: #222;
-            margin-bottom: 1rem;
-        }
+nav a:hover {
+    text-decoration: underline;
+}
 
-        p {
-            margin-bottom: 1rem;
-        }
+/* Main Section */
+main {
+    padding: 2rem;
+    background: white;
+    margin: 1rem auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        button {
-            background-color: #0056b3;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            font-size: 1rem;
-        }
+main h2 {
+    font-size: 1.5rem;
+    color: #005b99;
+    margin-bottom: 1rem;
+}
 
-        button:hover {
-            background-color: #003d80;
-        }
+main p {
+    margin-bottom: 1rem;
+}
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            body {
-                font-size: 14px;
-            }
+footer p {
+    font-size: 0.9rem;
+}
 
-            nav {
-                flex-direction: column;
-            }
+/* Buttons */
+button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-            nav a {
-                margin: 0.5rem 0;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Professional Site</h1>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
-    <div class="container">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel dolor at lacus tincidunt viverra.</p>
+button:hover {
+    background-color: #005b99;
+}
 
-        <button>Learn More</button>
-    </div>
-    <footer>
-        <p>&copy; 2024 Professional Styles. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Enhanced Styles for Specific Sections */
+main section {
+    margin-bottom: 2rem;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main p {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+/* Image Styling */
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.images img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Bar Enhancements */
+nav {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
